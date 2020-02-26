@@ -9,11 +9,11 @@ public class Lab8 {
     public static void testOverlay() {
 
         Image img1 = new Image("images/pixel-heart.png");
-        Image borderedImg1 = img1.squareOverlay(4);
+        Image borderedImg1 = Image.squareOverlay(img1, 4);
         borderedImg1.explore();
 
         Image img2 = new Image("images/crane.jpg");
-        Image borderedImg2 = img2.squareOverlay(4);
+        Image borderedImg2 = Image.squareOverlay(img2, 4);
         borderedImg2.explore();
     }
 
@@ -21,11 +21,11 @@ public class Lab8 {
 
         // Flip the image and visualize the result
         Image img1 = new Image("images/pixel-heart.png");
-        Image rotatedImg1 = img1.rotateClockwise90();
+        Image rotatedImg1 = Image.rotateClockwise90(img1);
         rotatedImg1.explore();
 
         Image img2 = new Image("images/crane.jpg");
-        Image rotatedImg2 = img2.rotateClockwise90();
+        Image rotatedImg2 = Image.rotateClockwise90(img2);
         rotatedImg2.explore();
 
     }

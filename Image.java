@@ -126,7 +126,7 @@ public class Image {
     * Make a copy of the image and add a black square with side length n at
     * the bottom right corner of the new image
     */
-    public Image squareOverlay(int n) {
+    public static Image squareOverlay(Image img, int n) {
         // TODO: Implement method, replace return value and delete this comment
         return dummy;
     }
@@ -134,7 +134,7 @@ public class Image {
     /**
     * Create a new image that is a 90 degrees clockwise rotation of the original
     */
-    public Image rotateClockwise90() {
+    public static Image rotateClockwise90(Image img) {
         // TODO: Implement method, replace return value and delete this comment
         return dummy;
     }
